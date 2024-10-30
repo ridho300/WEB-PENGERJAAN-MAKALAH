@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2 {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .service-card {
+    border: 1px solid #FFF;
+    padding: 10px;
+    margin: 10px;
+    animation: slideIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  body {
+    background: linear-gradient(135deg, #1a1a1a 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #1a1a1a 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #1a1a1a 25%, transparent 25%),
+                linear-gradient(45deg, #1a1a1a 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+  }
+  #home {
+    background-image: url('path/to/background-image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .background-ball {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: bounce 3s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  body {
+    background: linear-gradient(45deg, #111, #444);
+  }
+  
+  #blur-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+  .moving-line {
+    position: fixed;
+    width: 2px;
+    height: 100vh;
+    background-color: #FFF;
+    animation: moveVertical 5s linear infinite;
+  }
+  
+  @keyframes moveVertical {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  .whatsapp-link {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #20b358;
+  }
+  
